@@ -10,7 +10,7 @@ const InfoBar = ({room}) => {
                 <h3>{room}</h3>
             </div>
             <div className={style.rightInnerContainer}>
-                <a href="/"><i className='bx bx-window-close'></i></a>
+                <a href="/"><i className={`bx bx-window-close ${style.iconClose}`}></i></a>
             </div>
         </div>
     )

@@ -34,3 +34,9 @@
       width: 60%;
     }
   }
+  .messageContainer {
+    flex: 1; /* Permite que el contenedor de mensajes crezca para ocupar el espacio disponible */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando los mensajes superen la altura del contenedor */
+    padding: 10px;
+  }
+  

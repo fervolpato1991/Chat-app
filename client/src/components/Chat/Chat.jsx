@@ -45,15 +45,16 @@ const Chat = () => {
         }
     }
 
-    console.log(message, messages);
     return (
         <div className={style.outerContainer}>
-            <div className={style.container}>
-                <InfoBar room={room}/>
-                <Messages messages={messages} name={name}/>
-                <Text message={message} setMessage={setMessage} sendMessage={sendMessage}/>
-            </div>
+        <div className={style.container}>
+          <InfoBar room={room} />
+          <div className={style.messageContainer}>
+            <Messages messages={messages} name={name} />
+          </div>
+          <Text message={message} setMessage={setMessage} sendMessage={sendMessage} />
         </div>
+      </div>
     )
 };
 
