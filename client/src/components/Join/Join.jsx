@@ -19,7 +19,7 @@ const preventHandler = (event) => {
                 <div><input placeholder='Name' type='text' onChange={nameHandler} className={style.joinInput}/></div>
                 <div><input placeholder='Room' type='text' onChange={roomHandler} className={style.joinInput}/></div>
                 <Link onClick={preventHandler} to={`/chat?name=${name}&room=${room}`}>
-                <button className='button' type="submit">Sing In</button>
+                <button className={style.button} type="submit">Sing In</button>
                 </Link>
             </div>
         </div>
