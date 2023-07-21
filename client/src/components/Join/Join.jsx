@@ -13,11 +13,11 @@ const preventHandler = (event) => {
 };
 
     return (
-        <div className='joinOuterContainer'>
-            <div className='joinInnerContainer'>
-                <h1 className='Heading'>Join</h1>
-                <div><input placeholder='Name' type='text' onChange={nameHandler} className='joinInput'/></div>
-                <div><input placeholder='Room' type='text' onChange={roomHandler} className='joinInput'/></div>
+        <div className={style.joinOuterContainer}>
+            <div className={style.joinInnerContainer}>
+                <h1 className={style.Heading}>Join</h1>
+                <div><input placeholder='Name' type='text' onChange={nameHandler} className={style.joinInput}/></div>
+                <div><input placeholder='Room' type='text' onChange={roomHandler} className={style.joinInput}/></div>
                 <Link onClick={preventHandler} to={`/chat?name=${name}&room=${room}`}>
                 <button className='button' type="submit">Sing In</button>
                 </Link>
